@@ -2,8 +2,14 @@
 
 Experiments / dabbling with Log4J
 
+## Different Output Files
 
+The only (or maybe I should say) simplest way to run the same program
+from the same compiled package and output to two different log files is
+to have two different `log4j.properties` files.
 
+The `run_familiy_different_output_file.sh` script and the
+`log4j.properties.different.output.file` demonstarate this.
 
 ## Different Log Levels for Different Classes
 
