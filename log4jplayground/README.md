@@ -1,6 +1,21 @@
 # Log4JPlayground
 
-Experiments / dabbling with Log4J
+## Trying to silence DEBUG messages when using log4j-over-slf4j
+
+- Compare the output of these two scripts:
+
+This is the "good" setup:
+
+    ./run_producer_with_no_interceptor_and_slf4j_log4j.sh
+
+- I want loglevel to be honored from src/main/resources/log4j.properties
+- However, I want to use the Interceptor
+
+- The Interceptor uses log4j-over-slf4j which IGNORES my log4j.properties file
+  You can see the effect like this:
+
+- ./run_producer_with_interceptor_and_log4j_over_slf4j.sh
+- What am I doing wrong?
 
 ## Different Output Files
 
